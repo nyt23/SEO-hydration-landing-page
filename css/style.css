@@ -76,11 +76,32 @@ html, * {
 }
 
 
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
 
-.text-stroke {
-  --stroke-width: 2px;
-  --stroke-color: #000;
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-  color: white;
-  -webkit-text-stroke: var(--stroke-width) var(--stroke-color);
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
 }

@@ -28,3 +28,27 @@ document.addEventListener('click', (e) => {
     ripple.remove();
   }, 600);
 });
+
+// flip card
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all flip cards
+  const flipCards = document.querySelectorAll('.flip-card');
+
+  // Add event listeners to each card
+  flipCards.forEach(card => {
+    // For desktop - mouse events
+    card.addEventListener('mouseenter', function() {
+      this.classList.add('is-flipped');
+    });
+
+    card.addEventListener('mouseleave', function() {
+      this.classList.remove('is-flipped');
+    });
+
+    // For mobile - touch events
+    card.addEventListener('touchstart', function(e) {
+      e.preventDefault(); // Prevent scrolling on touch
+      this.classList.toggle('is-flipped');
+    }, {passive: false});
+  });
+});
