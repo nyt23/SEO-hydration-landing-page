@@ -25,9 +25,9 @@ html, * {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #9EE3E3;
+  background: #1EBEBE;
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0.5;
   box-shadow: 0 0 10px rgba(158, 227, 227, 0.3);
 }
 
