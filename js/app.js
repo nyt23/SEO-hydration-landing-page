@@ -29,6 +29,7 @@ document.addEventListener('click', (e) => {
   }, 600);
 });
 
+
 // flip card
 document.addEventListener('DOMContentLoaded', function() {
   // Get all flip cards
@@ -94,4 +95,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // update the observer options when the window is resized
   window.addEventListener('resize', updateObserveOptions);
+});
+
+
+// Smooth scroll to anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    const offset = 20; // Adjust this value to match your scroll-margin-top
+
+    window.scrollTo({
+      top: target.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  });
 });
