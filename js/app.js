@@ -52,3 +52,46 @@ document.addEventListener('DOMContentLoaded', function() {
     }, {passive: false});
   });
 });
+
+
+// Intersection Observer for scroll animations
+document.addEventListener('DOMContentLoaded', () => {
+  const animateElements = document.querySelectorAll('.scroll-animate');
+
+  const updateObserveOptions = () => {
+    let threshold = 0.02;
+    let rootMargin = '0px 0px -20px 0px';
+
+    // Check the screen size (1024px is the breakpoint)
+    if (window.innerWidth >= 1024)  {
+      threshold = 0.1;
+      rootMargin = '0px 0px -100px 0px';
+    }
+    // Create the observer with the updated options
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          // If the element is in view, add the animation class
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          } else {
+            // If the element is out of view, remove the animation class
+            entry.target.classList.remove('animate');
+          }
+        });
+    }
+    , {
+      threshold: threshold,
+      rootMargin: rootMargin
+    });
+
+    // observe each element
+    animateElements.forEach(element => {
+      observer.observe(element);
+    });
+  };
+
+  updateObserveOptions();
+
+  // update the observer options when the window is resized
+  window.addEventListener('resize', updateObserveOptions);
+});
