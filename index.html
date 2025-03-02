@@ -29,10 +29,10 @@
 
 <script src="./js/app.js"></script>
 
-<body class="bg-[#F2F2F2] overflow-x-hidden text-black px-4 md:px-8 lg:px-12 xl:px-16">
+<body class="bg-[#F2F2F2] overflow-x-hidden">
 <div class="droplet-cursor"></div>
 <!--  hero section-->
-<section>
+<section class="overflow-x-hidden">
   <div class="max-w-7xl mx-auto">
     <!--    nav bar-->
     <div class="py-2">
@@ -64,21 +64,25 @@
         <img src="./assets/right-star-mobile.svg" alt="focus-star" class="w-1/4 h-auto" />
       </div>
       <!--      CTA-->
-      <div class="flex items-center justify-center gap-2 md:-mt-8 lg:-mt-12 xl:-mt-16">
-        <img src="./assets/hydration-heroes.svg" alt="A girl in a red t-shirt holding a water bottle in her right hand and a boy in a green t-shirt holding a water bottle in his left hand" class="hidden sm:flex w-1/4 md:w-1/3 h-auto transform -translate-x-[15%] md:-translate-x-[25%] lg:-translate-x-[30%] z-[-1]" />
-        <div class="flex flex-col item-start text-center items-center space-y-4 flex-1 mt-6 sm:-mt-20 lg:-mt-24 xl:-mt-32">
-          <h3 class="font-[Caveat] text-lg sm:text-2xl md:text-3xl leading-[15px] sm:leading-[20px] md:leading-[30px] sm:mb-2 mb:mb-4 lg:mb-6 mt-2">Turn hydration into an adventure – download now!
-          </h3>
-          <div class="flex flex-col sm:flex-row justify-center items-center gap-2 md:gap-6 lg:gap-8 mt-2">
-            <img src="./assets/app-store.svg" alt="download hydration learning app for iOS on app store" class="w-full max-w-[120px] md:w-auto md:max-w-[200px] lg:max-w-[240px] mx-auto hover:scale-105 hover:transform-origin-center transition-transform transform" />
-            <img src="./assets/google-play.svg" alt="download hydration learning app for Android on google play" class="w-full max-w-[120px] md:w-auto md:max-w-[200px] lg:max-w-[240px] mx-auto hover:scale-105
+      <section class="overflow-x-hidden">
+        <div class="flex items-center justify-center gap-2 md:-mt-8 lg:-mt-12 xl:-mt-16 overflow-x-hidden">
+          <img src="./assets/hydration-heroes.svg" alt="A girl in a red t-shirt holding a water bottle in her right hand and a boy in a green t-shirt holding a water bottle in his left hand" class="hidden sm:flex w-1/4 md:w-1/3 h-auto transform -translate-x-[15%] md:-translate-x-[25%] lg:-translate-x-[30%] z-[-1]" />
+          <div class="flex flex-col item-start text-center items-center space-y-4 flex-1 mt-6 sm:-mt-20 lg:-mt-24 xl:-mt-32">
+            <h3 class="font-[Caveat] text-lg sm:text-2xl md:text-3xl leading-[15px] sm:leading-[20px] md:leading-[30px] sm:mb-2 mb:mb-4 lg:mb-6 mt-2">Turn hydration into an adventure – download now!
+            </h3>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-2 md:gap-6 lg:gap-8 mt-2">
+              <img src="./assets/app-store.svg" alt="download hydration learning app for iOS on app store" class="w-full max-w-[120px] md:w-auto md:max-w-[200px] lg:max-w-[240px] mx-auto hover:scale-105 hover:transform-origin-center transition-transform transform" />
+              <img src="./assets/google-play.svg" alt="download hydration learning app for Android on google play" class="w-full max-w-[120px] md:w-auto md:max-w-[200px] lg:max-w-[240px] mx-auto hover:scale-105
                hover:transform-origin-center transition-transform transform" />
+            </div>
           </div>
+          <img src="./assets/hydration-partners.svg" alt="Hydration partners" class="hidden sm:flex w-1/4 md:w-1/3 h-auto transform translate-x-[15%] md:translate-x-[25%] lg:translate-x-[30%] z-[-1]" />
         </div>
-        <img src="./assets/hydration-partners.svg" alt="Hydration partners" class="hidden sm:flex w-1/4 md:w-1/3 h-auto transform translate-x-[15%] md:translate-x-[25%] lg:translate-x-[30%] z-[-1]" />
-      </div>
-      <div class="w-screen -mx-4 md:-mx-8 lg:-mx-12 xl:-mx-20 mt-8 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-24 z-1">
-        <img src="./assets/ripped-paper.svg" alt="ripped paper transition" class="w-full h-auto"/>
+      </section>
+      <div class="w-full overflow-x-hidden mt-8 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-24 z-1">
+        <div class="w-full relative left-1/2 -translate-x-1/2">
+          <img src="./assets/ripped-paper.svg" alt="ripped paper transition" class="w-full h-auto"/>
+        </div>
       </div>
     </div>
   </div>
@@ -90,7 +94,7 @@
     <div class="mt-6 md:mt-10">
       <h2 class="font-[Bangers] text-center text-[#111111] tracking-wide text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-10">Level Up Your Hydration, Boost Your Mind!</h2>
       <!--        blocks-->
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-14 p-4 flex-wrap mt-10 md:mt-16 lg:mt-18 xl:mt-22">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-14 p-4 flex-wrap mt-10 md:mt-16 lg:mt-18 xl:mt-22 mb-10 md:mb-16 lg:mb-18 xl:mb-22">
         <!--          block 1-->
         <div class="relative w-[230px] md:w-[300px] max-w-[80vw] aspect-[500/614]">
           <div class="absolute inset-0 bg-[#97D5D5] rounded-2xl border-[1.5px] md:border-2 border-black
@@ -151,8 +155,10 @@
     </div>
   </div>
   <!--    paper divider-->
-  <div class="w-screen mt-8 -mx-4 md:-mx-8 lg:-mx-12 xl:-mx-20">
-    <img src="./assets/ripped-paper-opposite.svg" alt="ripped paper transition" class="w-full h-auto"/>
+  <div class="w-full overflow-x-hidden z-1">
+    <div class="w-full relative left-1/2 -translate-x-1/2">
+      <img src="./assets/ripped-paper-opposite.svg" alt="ripped paper transition" class="w-full h-auto"/>
+    </div>
   </div>
 </section>
 
@@ -160,10 +166,10 @@
 <section id="feature">
   <div>
     <!--      first feature-->
-    <div class="relative -mt-6 md:-mt-14 lg:-mt-16">
+    <div class="relative -mt-6 md:-mt-14 lg:-mt-16 overflow-x-hidden">
       <!-- Background container with full viewport width -->
-      <div class="absolute inset-0 -left-[50vw] -right-[50vw] w-[200vw] mx-auto bg-[#D6E47E] z-[-1]"></div>
-      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="absolute inset-0 w-full mx-auto bg-[#D6E47E] z-[-1]"></div>
+      <div class="max-w-7xl mx-auto px-8 md:px-10 lg:px-12">
         <div class="flex flex-col md:flex-row justify-between items-center md:items-center lg:items-start pt-16 md:pt-20 md:pb-[100px] lg:pt-[200px] gap-4 md:gap-14 lg:gap-18 xl:gap-20 scroll-animate scroll-animate opacity-0 -translate-x-6 md:-translate-x-6">
           <!--         left text section-->
           <div class="pt-10 md:pt-14 flex flex-row gap-6 md:gap-8 lg:gap-10 xl:gap-12 flex-1">
@@ -190,8 +196,8 @@
   <!--      second feature-->
   <div class="relative">
     <!-- Background container with full viewport width -->
-    <div class="absolute inset-0 -left-[50vw] -right-[50vw] w-[200vw] mx-auto z-[-1]"></div>
-    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <div class="absolute inset-0 w-full mx-auto bg-[#F2F2F2] z-[-1]"></div>
+    <div class="max-w-7xl mx-auto px-8 md:px-10 lg:px-12">
       <div class="flex flex-col md:flex-row justify-between items-center md:items-center lg:items-center pt-10 md:pb-6 gap-4 md:gap-14 lg:gap-18 xl:gap-20 scroll-animate scroll-animate-right opacity-0 translate-x-6 md:translate-x-6">
         <!--         right text section-->
         <div class="pt-10 md:order-2 lg:order-2 xl:order-2 lg:pt-20 xl:pt-24 flex flex-row gap-6 md:gap-8 lg:gap-10 xl:gap-12 flex-1">
@@ -219,8 +225,8 @@
   <!--      third feature-->
   <div class="relative">
     <!-- Background container with full viewport width -->
-    <div class="absolute inset-0 -left-[50vw] -right-[50vw] w-[200vw] mx-auto bg-[#FED47F] z-[-1]"></div>
-    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <div class="absolute inset-0 w-full mx-auto bg-[#FED47F] z-[-1]"></div>
+    <div class="max-w-7xl mx-auto px-8 md:px-10 lg:px-12">
       <div class="flex flex-col md:flex-row justify-between items-center md:items-center lg:items-start pt-10 pb-6 md:pb-8 lg:pt-[100px] gap-4 md:gap-14 lg:gap-18 xl:gap-20 scroll-animate scroll-animate opacity-0 -translate-x-6 md:-translate-x-6">
         <!--         left text section-->
         <div class="pt-10 md:pt-20 lg:pt-20 xl:pt-24 flex flex-row gap-6 md:gap-8 lg:gap-10 xl:gap-12 flex-1">
@@ -246,8 +252,8 @@
   <!--      forth feature-->
   <div class="relative">
     <!-- Background container with full viewport width -->
-    <div class="absolute inset-0 -left-[50vw] -right-[50vw] w-[200vw] mx-auto z-[-1]"></div>
-    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <div class="absolute inset-0 w-full mx-auto bg-[#F2F2F2] z-[-1]"></div>
+    <div class="max-w-7xl mx-auto px-8 md:px-10 lg:px-12">
       <div class="flex flex-col md:flex-row justify-between items-center md:items-center lg:items-center pt-10 md:pb-6 gap-4 md:gap-14 lg:gap-18 xl:gap-20 scroll-animate scroll-animate-right opacity-0 translate-x-6 md:translate-x-6">
         <!--         right text section-->
         <div class="pt-10 md:order-2 lg:order-2 xl:order-2 lg:pt-20 xl:pt-24 flex flex-row gap-6 md:gap-8 lg:gap-10 xl:gap-12 flex-1">
@@ -273,12 +279,16 @@
   </div>
 </section>
 
-<!--  FAQ section-->
-<section id="faq" class="relative scroll-animate opacity-0 translate-y-6">
-  <!--    paper divider-->
-  <div class="w-screen -mx-4 md:-mx-8 lg:-mx-12 xl:-mx-20 mt-8 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-24 z-1">
+<!--    paper divider-->
+<div class="w-full overflow-x-hidden mt-8 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-24 z-1">
+  <div class="w-full relative left-1/2 -translate-x-1/2">
     <img src="./assets/ripped-paper-opposite.svg" alt="ripped paper transition" class="w-full h-auto"/>
   </div>
+</div>
+
+<!--  FAQ section-->
+<section id="faq" class="relative scroll-animate opacity-0 translate-y-6 overflow-x-hidden">
+
   <!-- Full-width background -->
   <div class="absolute inset-0 -left-[50vw] -right-[50vw] w-[200vw] mx-auto bg-[#FFE28B] z-[-1]"></div>
   <!-- FAQ Content -->
@@ -427,14 +437,16 @@
     </div>
   </div>
   <!--    paper divider-->
-  <div class="w-screen -mx-4 md:-mx-8 lg:-mx-12 xl:-mx-20 mt-8 z-1">
-    <img src="./assets/ripped-paper.svg" alt="ripped paper transition" class="w-full h-auto"/>
+  <div class="w-full overflow-x-hidden mt-8 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-24 z-1">
+    <div class="w-full relative left-1/2 -translate-x-1/2">
+      <img src="./assets/ripped-paper.svg" alt="ripped paper transition" class="w-full h-auto"/>
+    </div>
   </div>
 </section>
 
 <!--  CTA section-->
-<section class="relative scroll-animate opacity-0 translate-y-6">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+<section class="relative scroll-animate opacity-0 translate-y-6 overflow-x-hidden">
+  <div class="max-w-7xl mx-auto px-8 md:px-10 lg:px-12">
     <div class="text-center mt-10 md:mt-16 lg:mt-20 xl:mt-24 mb-6 md:mb-12 lg:mb-16 xl:mb-20 mr-4 ml-4 md:mr-6 md:ml-6 lg:mr-12 lg:ml-12 xl:mr-14 xl:ml-14">
       <h1 class="font-[Bangers] text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 md:mb-10 lg:mb-16 xl:mb-20">Thirsty for fun and rewards?</h1>
       <h2 class="flex flex-col font-[Nunito] text-base mt-6 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Download the app, take on challenges, and join a community that’s as thirsty for success as you are. Let’s make hydration exciting together!<span class="font-[Caveat]  mt-4 md:mt-8 lg:mt-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Start your hydration journey today!</span></h2>
@@ -446,13 +458,15 @@
     </div>
   </div>
   <!--    paper divider-->
-  <div class="w-screen -mx-4 md:-mx-8 lg:-mx-12 xl:-mx-20 mt-8 z-1">
-    <img src="./assets/ripped-paper-opposite.svg" alt="ripped paper transition" class="w-full h-auto"/>
+  <div class="w-full overflow-x-hidden mt-8 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-24 z-1">
+    <div class="w-full relative left-1/2 -translate-x-1/2">
+      <img src="./assets/ripped-paper-opposite.svg" alt="ripped paper transition" class="w-full h-auto"/>
+    </div>
   </div>
 </section>
 
 <!--  Footer section-->
-<section class="relative">
+<section class="relative overflow-x-hidden">
   <div>
     <!-- Full-width background -->
     <div class="absolute inset-0 -left-[50vw] -right-[50vw] w-[200vw] mx-auto bg-[#99DEDE] -mt-6 md:-mt-10 lg:-mt-14 z-[-1]">
@@ -462,13 +476,13 @@
   <div class="relative pt-6 pb-6 md:pb-18 xl:pt-12 md:pt-8 lg:pt-10 xl:pt-12">
     <div class="flex justify-between items-center">
       <!--      left side-->
-      <div class="flex flex-col sm:flex-row sm:space-x-4 justify-center px-4 md:px-6 lg:px-10">
+      <div class="flex flex-col sm:flex-row sm:space-x-4 justify-center px-8 md:px-10 lg:px-12">
         <h3 class="font-[Bangers] text-xl md:text-2xl lg:text-3xl xl:text-4xl">Home</h3>
         <h3 class="font-[Bangers] text-xl md:text-2xl lg:text-3xl xl:text-4xl">About</h3>
         <h3 class="font-[Bangers] text-xl md:text-2xl lg:text-3xl xl:text-4xl">Contact</h3>
       </div>
       <!--      right side-->
-      <div class="ml-auto text-right space-y-2">
+      <div class="text-right space-y-2 px-8 md:px-10 lg:px-12">
         <h3 class="font-[Bangers] text-base md:text-lg lg:text-xl xl:text-2xl">Stay tuned</h3>
         <div class="flex flex-row gap-2 justify-end">
           <img src="./assets/instagram-icon.svg" alt="follow us on instagram" class="w-10 md:w-12 lg:w-16 xl:w-18 hover:scale-110 transition-transform" />
@@ -478,10 +492,9 @@
         <p class="font-[Caveat] text-base md:text-xl lg:text-2xl xl:text-3xl">
           Follow us for updates and hydration tips!
         </p>
-
       </div>
     </div>
-    <div>
+    <div class="px-8 md:px-10 lg:px-12">
       <p class="font-[Nunito] text-[10px] md:text-sm mt-16">© 2025 HydrationLearningApp.org. All Rights Reserved.</p>
     </div>
   </div>
